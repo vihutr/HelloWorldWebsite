@@ -20,7 +20,27 @@
             }
             body{
                 background: rgb(65, 65, 65);
+                /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+                font-family: monospace;
                 color: white;
+            }
+            .button{
+                background-color: rgb(0, 128, 255);
+                border: none;
+                color: rgb(255, 255, 255);
+                padding: 20px;
+                font-family: monospace;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+            }
+            .roundA{
+                border-radius: 20px;
+            }
+            .roundB{
+                border-radius: 50%;
             }
         </style>
     </head>
@@ -36,8 +56,30 @@ selector{
 }
 </pre>
 
-        <p>A selector, such as h1 or h2, altered with properties, such as color or opacity, of some value, like blue or gray. Properties blocks are always separated by semicolons.</p>
+        <p>A selector (such as h1, h2, p, or even body) altered with properties (such as color or opacity) of some value (like blue or gray). Properties blocks are always separated by semicolons.</p>
         </p>
+        <p>The CSS code applied to multiple classes on a single particular selector go in order of how the code is written.</p> 
+        <p>Example: The following button has the classes button, roundA, and roundB associated with it. While both roundA and roundB have property border-radius, A has a value of 20px (only slightly rounded reactangular button) while B has a value of 50% (essentially a fully rounded button). In this case, roundA's code is written in the CSS style section first and then roundB comes after. A executes first but B overwrites this execution, creating a completely round button. Copy pasting roundB's code before roundA's will have the opposite occur.</p>
+        
+<pre class = "prettyprint">
+.button{
+    background-color: rgb(0, 128, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: monospace;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.roundA{ border-radius: 20px; }
+.roundB{ border-radius: 50%; }
+</pre>
+        <h2>HTML Button with rounded corner</h2>
+
+        <button class = "button roundA roundB"> Rounded </button>
 
         <h2>Common HTML</h2>
         <p>&lt;p>A paragraph<br/> &lt;br />line break </p>
