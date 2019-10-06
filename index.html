@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>My Page</title>
+        
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=desert&amp;callback=js_ident" ></script>
+
+        <!-- CSS -->
         <style type ="text/css">
         .tab { margin-left: 40px } 
         </style>
@@ -19,28 +24,35 @@
             }
         </style>
     </head>
-    <body>
-        <h1>Header 1: CSS and html basics</h1>
 
-        <h2>Header 2: Fundamental Structure</h2>
-        <p>
-        selector{
-        <p class ="tab">property: value;</p>
-        }
+    <body>
+        <h1>CSS and HTML basics</h1>
+
+        <h2>CSS Fundamental Structure</h2>
+
+<pre class = "prettyprint">
+selector{
+    property: value;
+}
+</pre>
+
         <p>A selector, such as h1 or h2, altered with properties, such as color or opacity, of some value, like blue or gray. Properties blocks are always separated by semicolons.</p>
         </p>
 
-        <p>&lt;p>A paragraph&lt;/p><br/> line break </p>
-        <p><strong>bold</strong> and <em> italics </em></em></p>
-        <button>No Style Button</button>
-        <ul>unorderedlist:
-                <li>list item</li>
-                <li>list item</li>
+        <h2>Common HTML</h2>
+        <p>&lt;p>A paragraph<br/> &lt;br />line break </p>
+
+        <p><strong>&lt;strong>bold</strong>
+        <br/>and 
+        <br/><em> &lt;em>italics </em></em></p>
+        
+        <button>&lt;button></button>
+        <ul>&lt;ul>unorderedlist:
+            <li>&lt;li>list item</li>
         </ul>
-        <ol>orderedlist:
+        <ol>&lt;ol>orderedlist:
             
-        <li>list item</li>
-        <li>list item</li>
+        <li>&lt;li>list item</li>
         </ol>
     </body>
 </html>
