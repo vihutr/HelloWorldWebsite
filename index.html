@@ -65,8 +65,7 @@ selector{
 }
 </pre>
 
-        <p>A selector (such as h1, h2, p, or even body) altered with properties (such as color or opacity) of some value (like blue or gray). Properties blocks are always separated by semicolons.</p>
-        </p>
+        <p>A selector (such as h1, h2, p, or even body) altered with properties (such as color or opacity) of some value (like blue or gray). Properties blocks are always separated by semicolons. In the case of the selector being a class or id, "." and "#" must be used respectively (as is shown in the below example). In an HTML doc, the id attribute must be unique, so if more than one element uses some styling, classes are to be used; id statements will also override rules in a class statement.</p>
         <p>The CSS code applied to multiple classes on a single particular selector go in order of how the code is written.</p> 
         <p style = "text-indent:40px">Example: The following button has the classes buttonEx, roundA, and roundB associated with it. While both roundA and roundB have property border-radius, A has a value of 20px (only slightly rounded reactangular button) while B has a value of 50% (essentially a fully rounded button). In this case, roundA's code is written in the CSS style section first and then roundB comes after. A executes first but B overwrites this execution, creating a completely round button. Copy pasting roundB's code before roundA's will have the opposite occur.</p>
         
@@ -88,7 +87,9 @@ selector{
 </pre>
         <h3>HTML Button with rounded corner</h3>
         <button class = "buttonEx roundA roundB"> Rounded </button>
-    
+
+        <h3>However...</h3>
+        <p></p>
     </section>
     <section>
         <h2>Common HTML</h2>
