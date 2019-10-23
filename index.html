@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CSS and HTML Basics</title>
-        
-        <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=desert&amp;callback=js_ident" ></script>
 
-        <!-- CSS -->
-        <style type ="text/css">
-        .tab { margin-left: 40px } 
-        </style>
-        <style>
-            h1{
-                color: rgb(27, 255, 255);
-                font-size:32px;
-            }
-            h2{
-                color: rgb(32, 203, 209);
-                font-size:20px;
-            }
-            h3{
-                color: rgb(54, 169, 173);
-                font-size:16px;
-            }
-            body{
-                background: rgb(65, 65, 65);
-                /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
-                font-family: monospace;
-                color: white;
-                padding: 0px;
-                margin: 10px 70px;
-            }
-            .buttonEx{
-                background-color: rgb(42, 144, 245);
-                border: none;
-                color: rgb(255, 255, 255);
-                padding: 20px;
-                font-family: monospace;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-            }
-            .roundA{
-                border-radius: 20px;
-            }
-            .roundB{
-                border-radius: 50%;
-            }
-        </style>
-    </head>
+<head>
+    <title>CSS and HTML Basics</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic webpage made from learning day 1 HTML/CSS">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!-- Scripts -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=desert&amp;callback=js_ident"></script>
 
-    <body>
-        <h1>CSS and HTML Basics</h1>
+    <!-- CSS -->
+    <style type="text/css">
+        .tab {
+            margin-left: 40px
+        }
+    </style>
+    <style>
+        h1 {
+            color: rgb(27, 255, 255);
+            font-size: 32px;
+        }
 
-        <h2>CSS Fundamental Structure</h2>
+        h2 {
+            color: rgb(32, 203, 209);
+            font-size: 20px;
+        }
+
+        h3 {
+            color: rgb(54, 169, 173);
+            font-size: 16px;
+        }
+
+        body {
+            background: rgb(65, 65, 65);
+            /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+            font-family: monospace;
+            color: white;
+            padding: 0px;
+            margin: 10px 70px;
+        }
+
+        .buttonEx {
+            background-color: rgb(42, 144, 245);
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            font-family: monospace;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        .roundA {
+            border-radius: 20px;
+        }
+
+        .roundB {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS and HTML Basics</h1>
+
+    <h2>CSS Fundamental Structure</h2>
 
     <section>
 
-<pre class = "prettyprint">
+        <pre class="prettyprint">
 selector{
     property: value;
 }
 </pre>
 
-        <p>A selector (such as h1, h2, p, or even body) altered with properties (such as color or opacity) of some value (like blue or gray). Properties blocks are always separated by semicolons. In the case of the selector being a class or id, "." and "#" must be used respectively (as is shown in the below example). In an HTML doc, the id attribute must be unique, so if more than one element uses some styling, classes are to be used; id statements will also override rules in a class statement.</p>
-        <p>The CSS code applied to multiple classes on a single particular selector go in order of how the code is written.</p> 
-        <p style = "text-indent:40px">Example: The following button has the classes buttonEx, roundA, and roundB associated with it. While both roundA and roundB have property border-radius, A has a value of 20px (only slightly rounded reactangular button) while B has a value of 50% (essentially a fully rounded button). In this case, roundA's code is written in the CSS style section first and then roundB comes after. A executes first but B overwrites this execution, creating a completely round button. Copy pasting roundB's code before roundA's will have the opposite occur.</p>
-        
-<pre class = "prettyprint">
+        <p>A selector (such as h1, h2, p, or even body) altered with properties (such as color or opacity) of some value
+            (like blue or gray). Properties blocks are always separated by semicolons. In the case of the selector being
+            a class or id, "." and "#" must be used respectively (as is shown in the below example). In an HTML doc, the
+            id attribute must be unique, so if more than one element uses some styling, classes are to be used; id
+            statements will also override rules in a class statement.</p>
+        <p>The CSS code applied to multiple classes on a single particular selector go in order of how the code is
+            written.</p>
+        <p style="text-indent:40px">Example: The following button has the classes buttonEx, roundA, and roundB
+            associated with it. While both roundA and roundB have property border-radius, A has a value of 20px (only
+            slightly rounded reactangular button) while B has a value of 50% (essentially a fully rounded button). In
+            this case, roundA's code is written in the CSS style section first and then roundB comes after. A executes
+            first but B overwrites this execution, creating a completely round button. Copy pasting roundB's code before
+            roundA's will have the opposite occur.</p>
+
+        <pre class="prettyprint">
 .buttonEx{
     background-color: rgb(0, 128, 255);
     border: none;
@@ -86,14 +108,14 @@ selector{
 .roundB{ border-radius: 50%; }
 </pre>
         <h3>HTML Button with rounded corner</h3>
-        <button class = "buttonEx roundA roundB"> Rounded </button>
+        <button class="buttonEx roundA roundB"> Rounded </button>
 
         <h3>However...</h3>
         <p></p>
     </section>
     <section>
         <h2>Common HTML</h2>
-        
+
         <div>&lt;div>A divider. The following are semantic div tags used for readability:</div>
         <header>&lt;header> The header</header>
         <nav>&lt;nav> Some form of navigation. Most basic form tends to be a ul with many li's for each link.</nav>
@@ -101,21 +123,24 @@ selector{
         <footer>&lt;footer> The footer</footer>
         <p>Using these tags one can organize a webpage into sections, or boxes, that make up a complete web page.</p>
 
-        <p>Using CSS Margin (adding space around box) and Padding (adding space within box) properties allows for altering how the page looks. One value applies to each side, two values has 1st val to top and bottom, 2nd value to left and right. 4 values is top, right, bottom, left.</p>
+        <p>Using CSS Margin (adding space around box) and Padding (adding space within box) properties allows for
+            altering how the page looks. One value applies to each side, two values has 1st val to top and bottom, 2nd
+            value to left and right. 4 values is top, right, bottom, left.</p>
 
-        <p>&lt;p>A paragraph<br/> &lt;br />line break </p>
+        <p>&lt;p>A paragraph<br /> &lt;br />line break </p>
         <p><strong>&lt;strong>bold</strong>
-        <br/>and 
-        <br/><em> &lt;em>italics </em></em></p>
-        
+            <br />and
+            <br /><em> &lt;em>italics </em></em></p>
+
         <button>&lt;button></button>
         <ul>&lt;ul>unorderedlist:
             <li>&lt;li>list item</li>
         </ul>
         <ol>&lt;ol>orderedlist:
-            
-        <li>&lt;li>list item</li>
+
+            <li>&lt;li>list item</li>
         </ol>
     </section>
-    </body>
+</body>
+
 </html>
