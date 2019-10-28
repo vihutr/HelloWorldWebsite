@@ -1,0 +1,47 @@
+.tab {
+    margin-left: 40px
+}
+        h1 {
+            color: rgb(27, 255, 255);
+            font-size: 32px;
+        }
+
+        h2 {
+            color: rgb(32, 203, 209);
+            font-size: 20px;
+        }
+
+        h3 {
+            color: rgb(54, 169, 173);
+            font-size: 16px;
+        }
+
+        body {
+            background: rgb(65, 65, 65);
+            /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+            font-family: monospace;
+            color: white;
+            padding: 0px;
+            margin: 10px 70px;
+        }
+
+        .buttonEx {
+            background-color: rgb(42, 144, 245);
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            font-family: monospace;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        .roundA {
+            border-radius: 20px;
+        }
+
+        .roundB {
+            border-radius: 50%;
+    }
